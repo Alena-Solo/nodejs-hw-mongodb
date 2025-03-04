@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon src/index.js",
     "lint": "eslint src/**/*.js",
-    "start": "node./srs/index.js"
+    "start": "node ./src/index.js"
   },
   "repository": {
     "type": "git",
