@@ -1,12 +1,11 @@
 {
   "name": "nodejs-hw-mongodb",
-  "private": "true",
   "version": "1.0.0",
   "type": "module",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
-    "lint": "eslint src/**/+.js",
+    "lint": "eslint src/**/*.js",
     "start": "node./srs/index.js"
   },
   "repository": {
