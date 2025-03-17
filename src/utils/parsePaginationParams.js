@@ -6,7 +6,7 @@ const parseNumber = (number, defaultValue) => {
     return defaultValue;
   }
 
-  return parseNumber;
+  return parsedNumber;
 };
 
 export const parsePaginationParams = (query) => {
