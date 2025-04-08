@@ -12,10 +12,10 @@ import {
   SMTP,
   TEMPLATES_DIR,
 } from '../constants/index.js';
-import { SessionsCollection } from '../db/models/session.js';
-import { UsersCollection } from '../db/models/user.js';
 import { getEnvVar } from '../utils/getEnvVar.js';
 import { sendEmail } from '../utils/sendMail.js';
+import { UsersCollection } from '../db/models/user.js';
+import { SessionsCollection } from '../db/models/session.js';
 
 const createSession = () => {
   const accessToken = randomBytes(30).toString('base64');
@@ -139,6 +139,8 @@ export const requestResetToken = async (email) => {
     );
   }
 };
+
+//
 
 export const resetPassword = async (payload) => {
   let tokenPayload;

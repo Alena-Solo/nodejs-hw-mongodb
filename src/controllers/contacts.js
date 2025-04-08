@@ -14,8 +14,6 @@ import {
   deleteContact,
 } from '../services/contacts.js';
 
-//
-
 export const getContactsController = async (req, res) => {
   const { page, perPage } = parsePaginationParams(req.query);
   const { sortBy, sortOrder } = parseSortParams(req.query);
@@ -37,8 +35,6 @@ export const getContactsController = async (req, res) => {
   });
 };
 
-//
-
 export const getContactByIdController = async (req, res) => {
   const { contactId } = req.params;
 
@@ -54,8 +50,6 @@ export const getContactByIdController = async (req, res) => {
     data: contact,
   });
 };
-
-//
 
 export const createContactController = async (req, res) => {
   const photo = req.file;
@@ -81,8 +75,6 @@ export const createContactController = async (req, res) => {
     data: contact,
   });
 };
-
-//
 
 export const updateContactController = async (req, res) => {
   const { contactId } = req.params;
@@ -117,8 +109,6 @@ export const updateContactController = async (req, res) => {
     data: updatedContact,
   });
 };
-
-//
 
 export const deleteContactController = async (req, res) => {
   const { contactId } = req.params;
